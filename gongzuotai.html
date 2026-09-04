@@ -29,7 +29,6 @@
 @media(max-width:560px){body{font-size:14px}.main-content{padding-left:12px;padding-right:12px}.topbar{gap:8px}.topbar h1{font-size:21px}.panel{padding:18px;border-radius:19px}.quick-panel{padding:17px}.quick-grid{gap:7px}.quick-action{min-height:84px;padding:12px 8px}.quick-action>svg{width:19px}.quick-action span strong{font-size:11px;white-space:nowrap}.quick-action i{font-size:15px;right:8px;top:8px}.hero-card{padding:24px}.hero-card h2{font-size:54px}.metric-row{gap:7px}.metric{min-height:88px;padding:14px 12px}.metric strong{font-size:18px}.form-row{grid-template-columns:1fr}.daily-habits{grid-template-columns:1fr}.daily-habit{min-height:122px}.habit-action{grid-template-columns:70px minmax(0,1fr)}.theme-swatches{grid-template-columns:repeat(2,1fr)}.media-wall{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 13px}.rating-distribution{gap:7px}.settings-sheet{padding:20px}.weekly-plan{grid-template-columns:1fr}.pie-wrap{grid-template-columns:1fr}.pie-wrap svg{margin:auto}.record-row{grid-template-columns:38px 1fr auto 30px;gap:8px}.record-row .record-main small{max-width:140px}.filter-chips{width:100%;overflow:auto;flex-wrap:nowrap;padding-bottom:3px}.filter-chips button{flex:0 0 auto;min-height:38px}.panel-head:has(.filter-chips){flex-direction:column}.compare-card{align-items:flex-start;flex-direction:column}.system-alert{flex-direction:column}.system-alert .btn{width:100%;min-height:46px}.shopping-row{grid-template-columns:28px 1fr auto 30px}.archive-head h2{font-size:23px}.legend-inline{display:none}}
 .mood-picker{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.mood-opt{display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 6px;border:1px solid #ddd4c8;border-radius:13px;background:#fbf8f3;transition:.18s;min-height:74px}.mood-opt .mo{font-size:24px;line-height:1}.mood-opt b{font-size:12px;font-weight:600;color:var(--muted)}.mood-opt.active{border-color:var(--plum);background:var(--plum-soft);box-shadow:0 0 0 3px rgba(77,48,69,.07)}.mood-opt.active b{color:var(--plum)}.mood-opt:hover{border-color:#92748a}@media(max-width:560px){.mood-picker{grid-template-columns:repeat(3,1fr)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
-.daily-reminder{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}.remind-card{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid #e5dccf;border-radius:16px;background:#fffdfa;box-shadow:0 2px 10px rgba(53,41,31,.05);transition:.2s}.remind-card .remind-icon{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:var(--plum-soft);color:var(--plum)}.remind-card .remind-icon svg{width:22px;height:22px}.remind-card .remind-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.remind-card .remind-main strong{font-size:15px;font-weight:600;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.remind-card .remind-main small{font-size:12.5px;color:var(--muted)}.remind-card .remind-action{flex:0 0 auto}.remind-card .remind-count{font-size:12.5px;font-weight:600;color:var(--muted)}.remind-card .remind-done-tag{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;color:var(--sage)}.remind-card .remind-done-tag svg{width:15px;height:15px}.remind-card.is-due{border-color:#ecc6b8;background:#fdf3ef;box-shadow:0 4px 16px rgba(182,95,66,.14);animation:remindPulse 2s ease-in-out infinite}.remind-card.is-due .remind-icon{background:#f6e0d6;color:var(--terra)}.remind-card.is-due .remind-main strong{color:var(--terra)}.remind-card.is-done{border-color:#dce7dd;background:#f4f9f4}.remind-card.is-done .remind-icon{background:#dfe9e0;color:var(--sage)}.spark-btn{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border:0;border-radius:12px;background:var(--terra);color:#fff;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(182,95,66,.28);transition:.15s}.spark-btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(182,95,66,.34)}.spark-btn svg{width:17px;height:17px}@keyframes remindPulse{0%,100%{box-shadow:0 4px 16px rgba(182,95,66,.12)}50%{box-shadow:0 6px 24px rgba(182,95,66,.26)}}
 .lang-switch{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:5px;padding:5px 7px;border:1px solid rgba(85,69,55,.14);border-radius:999px;background:rgba(255,253,250,.94);box-shadow:0 8px 24px rgba(53,41,31,.12);backdrop-filter:blur(12px)}.lang-switch button{min-width:34px;height:28px;padding:0 8px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:11px;font-weight:700}.lang-switch button.active{background:var(--plum);color:#fff}.lang-switch span{color:#b2a89d;font-size:10px}.lang-switch button:focus-visible{outline:2px solid var(--terra);outline-offset:2px}@media(max-width:860px){.lang-switch{right:14px;bottom:calc(82px + env(safe-area-inset-bottom))}}
 
   </style>
@@ -89,7 +88,6 @@
       </header>
 
       <section class="view active" data-title="今天，慢慢来" id="view-dashboard">
-        <div class="daily-reminder" id="dailyReminder"></div>
         <div class="dashboard-grid">
           <article class="hero-card"><div><p class="eyebrow light">今日生活指数</p><h2><span id="lifeScore">82</span><small>/ 100</small></h2><p id="heroSummary">三件要事，一点运动，留一笔清楚账。</p></div><div class="score-orbit"><span></span><i></i><b></b></div></article>
           <article class="panel quick-panel"><div class="panel-head"><div><p class="eyebrow">快速开始</p><h2>记下一件小事</h2></div><span class="mini-note">输入时自动保存</span></div><div class="quick-grid">
@@ -322,7 +320,6 @@
   var DB_SHOPPING = 'gzrGMe7GYLW3iVr0hzooL7';
   var DB_MEDIA = 'IBwrodYIUlX89bGeMDGtYz';
   var DB_MOOD = 'hRpGM7ZSTBYqGmNQPhJjbE';
-  var DB_REMIND = 'Sc8oX8mvTu1fFmWayzqKS9';
   var ONLINE = false, LOCAL_ONLY = false;
   try { if (window.__SMART_PAGE__ && window.__SMART_PAGE__.database) { var db = window.__SMART_PAGE__.database; ONLINE = true; } } catch(e) {}
 
@@ -366,7 +363,7 @@
 
   function pullAllRemote(cb){
     if (!ONLINE || LOCAL_ONLY) { if(cb) cb(false); return; }
-    var pending = 8, done = 0, changed = false;
+    var pending = 7, done = 0, changed = false;
     function oneDone(c){ done++; if(c) changed = true; if(done>=pending && cb) cb(changed); }
     dbFetchAll(DB_MONEY, function(rows){ if(rows){ mergeMoney(rows); oneDone(true); } else oneDone(false); });
     dbFetchAll(DB_HABIT, function(rows){ if(rows){ mergeHabit(rows); oneDone(true); } else oneDone(false); });
@@ -375,7 +372,6 @@
     dbFetchAll(DB_SHOPPING, function(rows){ if(rows){ mergeShopping(rows); oneDone(true); } else oneDone(false); });
     dbFetchAll(DB_MEDIA, function(rows){ if(rows){ mergeMedia(rows); oneDone(true); } else oneDone(false); });
     dbFetchAll(DB_MOOD, function(rows){ if(rows){ mergeMood(rows); oneDone(true); } else oneDone(false); });
-    dbFetchAll(DB_REMIND, function(rows){ if(rows){ mergeRemind(rows); oneDone(true); } else oneDone(false); });
   }
 
   function mergeMoney(rows){
@@ -421,7 +417,7 @@
       var time = r["时间"] || "";
       var priority = r["优先级"] || "normal";
       var note = r["备注"] || "";
-      return {id:r.record_id||uid(),type:'planner',date:d,createdAt:Date.now(),sample:false,remoteId:r.record_id,data:{title:title,list:list,done:(status==='已完成'),time:time,priority:priority,note:note}};
+      return {id:r.record_id||uid(),type:'planner',date:d,createdAt:Date.now(),sample:false,remoteId:r.record_id,data:{title:title,list:list,done:(status==='已完成'),time:time,priority:priority,note:note,spark:(title==='抖音续火花')}};
     });
     state.records = state.records.filter(function(r){return r.type!=='planner';}).concat(remoteRecords);
   }
@@ -615,37 +611,6 @@
   }
   function deleteRemoteMood(rid){ if(rid) dbDelete(DB_MOOD, rid); }
 
-  // 每日提醒（如：抖音续火花）
-  function mergeRemind(rows){
-    if(!rows) return;
-    if(rows.length===0){
-      // 云端暂无提醒：把本地未同步的提醒补推上线，保证换设备也在
-      (state.reminders||[]).forEach(function(item){ if(!item.remoteId && item.enabled) pushRemind(item); });
-      return;
-    }
-    state.reminders = rows.map(function(r){
-      return {id:r.record_id||uid(),name:r["提醒名称"]||"",time:r["提醒时间"]||"18:00",enabled:(r["启用状态"]||"启用")==="启用",doneDate:r["完成日期"]?String(r["完成日期"]).slice(0,10):"",sample:false,remoteId:r.record_id};
-    });
-  }
-  function pushRemind(item){
-    if (!ONLINE || LOCAL_ONLY) return;
-    var props = {};
-    props["提醒名称"] = { text: item.name || "" };
-    props["提醒时间"] = { text: item.time || "18:00" };
-    props["启用状态"] = { select: item.enabled ? "启用" : "停用" };
-    props["完成日期"] = { date: item.doneDate || "" };
-    dbAdd(DB_REMIND, props, function(rid){ if(rid) item.remoteId = rid; });
-  }
-  function updateRemoteRemind(item){
-    if (!ONLINE || LOCAL_ONLY || !item.remoteId) return;
-    var props = {};
-    props["提醒时间"] = { text: item.time || "18:00" };
-    props["启用状态"] = { select: item.enabled ? "启用" : "停用" };
-    props["完成日期"] = { date: item.doneDate || "" };
-    dbUpdate(DB_REMIND, item.remoteId, props);
-  }
-  function deleteRemoteRemind(rid){ if(rid) dbDelete(DB_REMIND, rid); }
-
   const LANG_PARAM = new URL(location).searchParams.get('lang');
   const LANG = LANG_PARAM === 'en' ? 'en' : 'zh';
   document.documentElement.lang = LANG;
@@ -827,9 +792,6 @@
         {id:uid(),date:shiftDate(-2),mood:'开心',title:'一顿好饭',content:'和朋友吃了顿很久没吃的火锅，聊到很晚，整个人都松了下来。',tags:'朋友 火锅',sample:true},
         {id:uid(),date:shiftDate(-4),mood:'疲惫',title:'有点累',content:'连续加班了几天，晚上早早上床，决定明天给自己放个小假。',tags:'工作 休息',sample:true}
       ],
-      reminders:[
-        {id:uid(),name:'抖音续火花',time:'18:00',enabled:true,doneDate:'',sample:true}
-      ],
       drafts:{},
       settings:{budget:5000,recordsSinceExport:0,moneySinceExport:0,lastExportAt:null,archiveFilter:'all',moneyFilter:'all',plannerFilter:'all',shoppingFilter:'pending',mediaView:'wall',mediaStatusFilter:'all',mediaRatingFilter:0,hiddenHabitKeys:[],brand:{name:'日常集',avatar:'日',tagline:'生活有迹可循',theme:'plum'},fitnessProfile:{height:165,target:55,startWeight:60,age:30,sex:'female',activity:1.375},weeklyPlan:DEFAULT_PLAN.map(x=>({...x}))}
     };
@@ -875,9 +837,8 @@
     });
     const mediaItems=(Array.isArray(candidate.mediaItems)?candidate.mediaItems:defaults.mediaItems).filter(item=>item&&item.name).map(item=>({id:item.id||uid(),name:String(item.name),type:['电影','剧','书','番'].includes(item.type)?item.type:'电影',status:['想看','在看','看完','弃了'].includes(item.status)?item.status:'想看',rating:clamp(Number(item.rating||0),0,5),review:String(item.review||''),date:/^\d{4}-\d{2}-\d{2}$/.test(item.date||'')?item.date:isoDate(),cover:typeof item.cover==='string'?item.cover:'',sample:Boolean(item.sample)}));
     const moodEntries=(Array.isArray(candidate.moodEntries)?candidate.moodEntries:defaults.moodEntries).filter(item=>item&&item.date).map(item=>({id:item.id||uid(),date:/^\d{4}-\d{2}-\d{2}$/.test(item.date||'')?item.date:isoDate(),mood:MOOD_LIST.includes(item.mood)?item.mood:'平静',title:String(item.title||''),content:String(item.content||''),tags:String(item.tags||''),sample:Boolean(item.sample)}));
-    const reminders=(Array.isArray(candidate.reminders)?candidate.reminders:defaults.reminders).filter(item=>item&&item.name).map(item=>({id:item.id||uid(),name:String(item.name),time:/^\d{1,2}:\d{2}$/.test(item.time||'')?item.time:'18:00',enabled:item.enabled!==false,doneDate:/^\d{4}-\d{2}-\d{2}$/.test(item.doneDate||'')?item.doneDate:'',sample:Boolean(item.sample),remoteId:item.remoteId||null}));
     return {
-      version:2,records,habits,mediaItems,moodEntries,reminders,
+      version:2,records,habits,mediaItems,moodEntries,
       drafts:candidate.drafts&&typeof candidate.drafts==='object'?candidate.drafts:{},
       settings:{...defaults.settings,...(candidate.settings||{}),brand:{...defaults.settings.brand,...(candidate.settings?.brand||{})},fitnessProfile:{...defaults.settings.fitnessProfile,...(candidate.settings?.fitnessProfile||{})},weeklyPlan:Array.isArray(candidate.settings?.weeklyPlan)?candidate.settings.weeklyPlan:DEFAULT_PLAN.map(x=>({...x}))}
     };
@@ -965,32 +926,23 @@
     document.getElementById('dashboardHabits').innerHTML=state.habits.slice(0,5).map(h=>`<div class="habit-pill"><span class="habit-dot ${h.tone}"></span><strong>${habitNameHtml(h)}</strong><small>${t(habitDone(h)?'已完成':'待打卡')}</small><button class="check-btn ${habitDone(h)?'checked':''}" data-action="habit-quick" data-id="${h.id}">${habitDone(h)?icon('i-check'):''}</button></div>`).join('');
     const recent=sortedRecords().slice(0,5);document.getElementById('recentRecords').innerHTML=recent.length?recent.map(r=>{const meta=TYPE_META[r.type]||TYPE_META.home;return`<div class="timeline-item"><span class="record-icon ${meta.tone}">${icon(meta.icon)}</span><span><strong>${recordTitleHtml(r)}</strong><small>${escapeHtml(formatDateHeading(r.date))} · ${t(meta.label)}</small></span><span class="record-value">${escapeHtml(valueFor(r))}</span></div>`;}).join(''):empty('第一条记录，会从这里开始');
     document.getElementById('insightText').textContent=completed?'你不是在追赶完美，而是在让好习惯慢慢变得自然。':'规律不是把每天塞满，而是知道什么值得留下。';
-    renderRemind();
   }
 
-  function remindStatus(item){
-    const now=new Date(),today=isoDate();
-    if(!item.enabled) return 'disabled';
-    if(item.doneDate===today) return 'done';
-    const [hh,mm]=(item.time||'18:00').split(':').map(Number);
-    const due=new Date();due.setHours(hh,mm,0,0);
-    return now>=due ? 'due' : 'upcoming';
-  }
-  function renderRemind(){
-    const box=document.getElementById('dailyReminder');
-    if(!box) return;
-    const items=(state.reminders||[]).filter(item=>item.enabled);
-    if(!items.length){ box.innerHTML=''; return; }
+  // 每天自动生成一条「抖音续火花」待办（若当天还没有则补一条）
+  function ensureSparkTodo(){
     const today=isoDate();
-    box.innerHTML=items.map(item=>{
-      const status=remindStatus(item);
-      const name=item.sample?localizedHtml(item.name):userHtml(item.name);
-      let cls='',iconName='i-clock',label='',sub='';
-      if(status==='done'){ cls='is-done'; iconName='i-check'; label=t('今天已续火花'); sub=t('明天 ')+item.time+t(' 继续提醒'); }
-      else if(status==='due'){ cls='is-due'; iconName='i-fire'; label=t('该续火花啦'); sub=t('别让火花断了，快去点一点'); }
-      else { cls='is-upcoming'; iconName='i-clock'; label=t('今天 ')+item.time+t(' 续火花'); sub=t('到时这里会提醒你'); }
-      return `<div class="remind-card ${cls}"><span class="remind-icon">${icon(iconName)}</span><div class="remind-main"><strong>${name}</strong><small>${sub}</small></div><div class="remind-action">${status==='done'?`<span class="remind-done-tag">${icon('i-check')} ${t('已续')}</span>`:status==='due'?`<button class="btn spark-btn" data-action="toggle-spark" data-id="${item.id}">${icon('i-fire')} ${t('续完火花')}</button>`:`<span class="remind-count">${label}</span>`}</div></div>`;
-    }).join('');
+    // 今天是否已有未完成的续火花待办
+    const todayTodo=state.records.some(r=>r.type==='planner' && r.data.spark===true && r.date===today && !r.data.done);
+    if(todayTodo) return;
+    // 今天已完成的续火花待办：保留（不再重复生成）
+    const todayDone=state.records.some(r=>r.type==='planner' && r.data.spark===true && r.date===today && r.data.done);
+    if(todayDone) return;
+    // 清理所有历史 spark 待办，只生成今天这一条
+    state.records=state.records.filter(r=>!(r.type==='planner'&&r.data.spark===true));
+    const rec={id:uid(),type:'planner',date:today,createdAt:Date.now(),sample:false,data:{title:'抖音续火花',list:'生活',done:false,time:'18:00',priority:'normal',note:'每天给 Ta 续火花',remind:false,spark:true}};
+    state.records.push(rec);
+    pushPlan(rec);
+    saveState();
   }
 
   function previousMonthKey(){const d=new Date();d.setDate(1);d.setMonth(d.getMonth()-1);return isoDate(d).slice(0,7);}
@@ -1193,7 +1145,6 @@
       if(type==='toggle-shopping'){const item=state.records.find(r=>r.id===id&&r.type==='home');if(item){item.data.bought=!item.data.bought;item.data.boughtDate=item.data.bought?isoDate():null;updateRemoteShopping(item);const saved=saveState();renderAll();if(saved&&item.data.bought){celebrate();toast('买到了，已移入完成');}}}
       if(type==='delete-media'){const item=state.mediaItems.find(media=>media.id===id);if(item&&confirm(LANG==='en'?`Remove “${item.name}” from the list?`:`确定从清单中删除“${item.name}”吗？`)){if(item.remoteId)deleteRemoteMedia(item.remoteId);state.mediaItems=state.mediaItems.filter(media=>media.id!==id);const saved=saveState();renderMedia();if(saved)toast('已从书影音清单移除');}}
       if(type==='delete-mood'){const item=state.moodEntries.find(m=>m.id===id);if(item&&confirm(LANG==='en'?'Delete this diary entry?':'确定删除这篇日记吗？')){if(item.remoteId)deleteRemoteMood(item.remoteId);state.moodEntries=state.moodEntries.filter(m=>m.id!==id);const saved=saveState();renderMood();if(saved)toast('日记已删除');}}
-      if(type==='toggle-spark'){const item=state.reminders.find(r=>r.id===id);if(item){item.doneDate=isoDate();if(item.remoteId)updateRemoteRemind(item);const saved=saveState();renderRemind();if(saved){celebrate();toast('火花续上啦，明天见');}}}
       if(type==='open-habit-settings')openHabitSettings();if(type==='close-habit-settings')closeHabitSettings();if(type==='open-plan-settings')openPlanSettings();if(type==='close-plan-settings')closePlanSettings();if(type==='open-fitness-profile')openFitnessProfile();if(type==='close-fitness-profile')closeFitnessProfile();
       if(type==='export-money')exportExcel('money');if(type==='export-fitness')exportExcel('fitness');if(type==='close-brand')closeBrandSettings();if(type==='reset-brand'){state.settings.brand={name:'日常集',avatar:'日',tagline:'生活有迹可循',theme:'plum'};saveState();applyBrand();openBrandSettings();toast('已恢复默认外观');}
     });
@@ -1210,7 +1161,7 @@
     window.addEventListener('storage',e=>{if(e.key!==STORAGE_KEY||!e.newValue)return;try{state=normalizeState(JSON.parse(e.newValue));renderAll();toast('另一个页面的数据已同步');}catch{}});
   }
 
-  function init(){const now=new Date(),weekdays=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];document.getElementById('todayLabel').textContent=LANG==='en'?new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',weekday:'long'}).format(now):`${now.getMonth()+1} 月 ${now.getDate()} 日 · ${weekdays[now.getDay()]}`;setDateDefaults();updateMoneyCategories();restoreDrafts();bindForms();bindEvents();renderAll();switchView(document.getElementById(`view-${location.hash.slice(1)}`)?location.hash.slice(1):'dashboard');if(!dataCorrupted)saveState();pullAllRemote(function(ok){ if(ok){ saveState(); renderAll(); } });}
+  function init(){const now=new Date(),weekdays=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];document.getElementById('todayLabel').textContent=LANG==='en'?new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',weekday:'long'}).format(now):`${now.getMonth()+1} 月 ${now.getDate()} 日 · ${weekdays[now.getDay()]}`;setDateDefaults();updateMoneyCategories();restoreDrafts();bindForms();bindEvents();ensureSparkTodo();renderAll();switchView(document.getElementById(`view-${location.hash.slice(1)}`)?location.hash.slice(1):'dashboard');if(!dataCorrupted)saveState();pullAllRemote(function(ok){ if(ok){ saveState(); ensureSparkTodo(); renderAll(); } });}
   startI18n();
   document.addEventListener('DOMContentLoaded',init);
 })();
